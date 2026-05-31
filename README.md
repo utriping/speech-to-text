@@ -16,7 +16,7 @@ Vocalize is a premium, full-stack application that allows users to record or upl
 - **Frontend**: React (Vite), Tailwind CSS, Framer Motion, Lucide Icons.
 - **Backend**: Node.js, Express, Multer.
 - **Database**: MongoDB (Mongoose).
-- **Services**: Google Cloud Platform.
+- **Services**: Deepgram (High-speed AI Speech-to-Text).
 
 ## 🛠️ Installation & Setup
 
@@ -40,14 +40,13 @@ Create a `.env` file in the `server` directory:
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-GOOGLE_APPLICATION_CREDENTIALS=./google-key.json
+DEEPGRAM_API_KEY=your_deepgram_api_key
 ```
 
-### 3. Google Cloud Credentials
-1. Go to [GCP Console](https://console.cloud.google.com/).
-2. Enable the **Cloud Speech-to-Text API**.
-3. Create a **Service Account** and download the **JSON Key**.
-4. Rename the key to `google-key.json` and place it in the `server/` directory.
+### 3. Deepgram API Key
+1. Sign up at [Deepgram Console](https://console.deepgram.com/).
+2. Create a new **API Key**.
+3. Paste the key into your `.env` file.
 
 ### 4. Run the App
 **Start Backend:**

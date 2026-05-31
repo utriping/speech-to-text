@@ -50,8 +50,8 @@ const Dashboard = () => {
   };
 
   const handleStopRecording = async (chunks) => {
-    const audioBlob = new Blob(chunks, { type: 'audio/wav' });
-    sendAudioToTranscription(audioBlob, `recording_${Date.now()}.wav`);
+    const audioBlob = new Blob(chunks, { type: 'audio/webm' });
+    sendAudioToTranscription(audioBlob, `recording_${Date.now()}.webm`);
   };
 
   const handleFileUpload = (e) => {
